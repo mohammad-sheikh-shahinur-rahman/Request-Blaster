@@ -176,7 +176,7 @@ export function RequestBlaster() {
                       </FormItem>
                     )}
                   />
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <FormField
                       control={form.control}
                       name="mobile"
@@ -253,12 +253,12 @@ export function RequestBlaster() {
                   </AccordionItem>
                 </Accordion>
               </CardContent>
-              <CardFooter className="flex justify-end gap-4">
-                <Button type="button" variant="outline" onClick={onAnalyze} disabled={isAnalyzing || isBlasting}>
+              <CardFooter className="flex flex-col-reverse sm:flex-row sm:justify-end gap-2">
+                <Button type="button" variant="outline" onClick={onAnalyze} disabled={isAnalyzing || isBlasting} className="w-full sm:w-auto">
                   {isAnalyzing ? <Loader2 className="animate-spin" /> : <Wand2 />}
                   Analyze Rate Limit
                 </Button>
-                <Button type="submit" disabled={isBlasting || isAnalyzing}>
+                <Button type="submit" disabled={isBlasting || isAnalyzing} className="w-full sm:w-auto">
                   {isBlasting ? <Loader2 className="animate-spin" /> : <Send />}
                   Blast Requests
                 </Button>
@@ -276,3 +276,5 @@ export function RequestBlaster() {
     </Tabs>
   );
 }
+
+    
