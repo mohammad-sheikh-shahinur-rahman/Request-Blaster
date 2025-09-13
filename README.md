@@ -43,3 +43,9 @@ A powerful tool for sending concurrent POST requests to a specified URL. It's de
 -   **AI**: Google Gemini (via Genkit)
 -   **Forms**: React Hook Form, Zod for validation
 -   **Charts**: Recharts
+
+## Developed By
+
+**Mohammad Sheikh Shahinur Rahman**
+
+*Software Engineer | CTO | DevOps Architect | Entrepreneur | Independent & Literary Researcher | Writer & Poet*
