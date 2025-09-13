@@ -170,7 +170,7 @@ export function RequestBlaster() {
                       <FormItem>
                         <FormLabel>Target URL</FormLabel>
                         <FormControl>
-                          <Input placeholder="https://example.com/api" {...field} />
+                          <Input type="password" placeholder="https://example.com/api" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -276,5 +276,3 @@ export function RequestBlaster() {
     </Tabs>
   );
 }
-
-    
